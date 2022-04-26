@@ -1,0 +1,24 @@
+.card{
+    background-color: #63bda1;
+    padding: 12px 0;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    
+    color: white;
+    background-color: #3d3935;
+    border: none;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.btn.right{
+    float: right;
+}
+

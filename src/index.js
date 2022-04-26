@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { AnswerProvider } from './Context/AnswerContext'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <AnswerProvider >
     <App />
+    </AnswerProvider>
   </React.StrictMode>
 );
 

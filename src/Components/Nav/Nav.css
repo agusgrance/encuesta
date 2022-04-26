@@ -1,0 +1,12 @@
+nav{
+    max-height: 150px;
+    display: flex;
+   /* border-bottom: 6px solid #63bda1*/
+   margin-bottom: 30px;
+}
+
+nav img{
+    height: 100px;
+   margin: 0 auto;
+   padding: 12px;
+}
