@@ -5,18 +5,24 @@ import Card from "./Components/Card/Card";
 import Login from "./Components/Login/Login";
 import Nav from "./Components/Nav/Nav";
 import AnswerContext  from './Context/AnswerContext'
+import EndQuiz from "./Components/EndQuiz/EndQuiz";
 
 
 function App() {
   
-  const { login } = useContext(AnswerContext);
+  const { login, endQuiz } = useContext(AnswerContext);
   return (
     <div className="App">
       
         <header className="App-header">
           <Nav />
         </header>
-        {!login ? <Login />: <Card /> }
+  
+        {endQuiz ? <EndQuiz/>
+        
+        :login
+         ? <Login />
+         : <Card /> }
       
     </div>
   );

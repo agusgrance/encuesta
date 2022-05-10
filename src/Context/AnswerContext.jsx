@@ -8,19 +8,18 @@ export function AnswerProvider({ children }) {
     nombre: '',
     empresa:'',
     email:'',
-    telefono:''
+    telefono:'',
   });
   const[sliderVal, setSliderVal] = useState(null);
   const[inputVal, setInputVal] = useState('');
-    const [answers, setAnswers] = useState([{
-        pregunta:'',
-        input:'',
-        slider:0,
-    }]);
+  const [answers, setAnswers] = useState([]);
+  const [endQuiz, setEndQuiz] = useState(false);
+
     return (
       <AnswerContext.Provider
         value={{
-            answers, setAnswers,login, setLogin, encuestado, setEncuestado,sliderVal, setSliderVal,inputVal, setInputVal
+            answers, setAnswers,login, setLogin, encuestado, setEncuestado,sliderVal, setSliderVal,inputVal, setInputVal, 
+            endQuiz, setEndQuiz
         }}
       >
         {children}

@@ -10,3 +10,7 @@
 .login .row{
     margin: 25px;
 }
+.login form {
+    width: 80%;
+    padding: 40px;
+}

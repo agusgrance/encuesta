@@ -7,8 +7,6 @@ function Slide() {
  
   const onSliderChange = (value) => {
     setSliderVal(value);
-    console.log(answers);
-  
   };
 
   return (

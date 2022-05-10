@@ -1,0 +1,10 @@
+.pregunta-content.end {
+    height: fit-content;
+}
+.end ul {
+    margin: 0;
+}
+.end li {
+    display: flex;
+    justify-content: center;
+}

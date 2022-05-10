@@ -30,7 +30,7 @@ var questionEncuesta = [
 {
     question: "¿Qué tan probable es que recomiende nuestros servicios a otras empresas del parque?",
     type: "slider",
-},
+}
 ];
 
 export default questionEncuesta;

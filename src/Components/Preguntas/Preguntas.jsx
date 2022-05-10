@@ -4,19 +4,12 @@ import Slide from '../Slide/Slide'
 import "./Preguntas.css"
   
 function Preguntas({question, tipo, counter}) {
-    const {answers, setAnswers, sliderVal, setSliderVal, inputVal, setInputVal } = useContext(AnswerContext);
+    const { setSliderVal, inputVal, setInputVal } = useContext(AnswerContext);
     useEffect(()=>{
-        handleAnswers();
         setSliderVal(null);
         setInputVal('');
-        
       },[counter]);
 
-      function handleAnswers(){
-        let obj = { pregunta: question , input: inputVal, slider: sliderVal };
-        setAnswers([...answers, obj]);
-        // console.log(answers);
-      }
 
     const handleInput = (e) =>{
         setInputVal(e.target.value);
